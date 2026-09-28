@@ -1,0 +1,2 @@
+#to make my life easier testing
+g++ main.cpp glad/src/gl.c -Iglad/include -o main -lglfw -lGL
