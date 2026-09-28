@@ -20,6 +20,12 @@ class values {
 
 };
 
+//error callback
+void error_callback(int error, const char* description) {
+  fprintf(stderr, "Oh no: %s\n", description);
+}
+glfwSetErrorCallback(error_callback);
+
 int main (int argc, char **argv) {
 //initialize glfw
   glfwInit();
@@ -37,7 +43,7 @@ int main (int argc, char **argv) {
 
     //window close flag
     while(!glfwWindowShouldClose) {
-      //keep doing shit
+      //keep doing things
     }
   }
 
